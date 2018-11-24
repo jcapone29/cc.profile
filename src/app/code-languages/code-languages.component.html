@@ -1,0 +1,13 @@
+<app-section-title [title]="'Tool Kit.'"></app-section-title>
+<div class="cc-container code-language-container">
+  <div class="code-language-inner-container" #innercontainer (mouseover)="freeze=true" (mouseout)="freeze=false">
+    <div class="code-language-card" *ngFor="let skill of appConfigSvc.siteConfig.codeLanguagesConfig; let i = index">
+      <div class="code-icon-conainer">
+        <div class="code-icon" [ngClass]="skill.language" [style.left.px]="skill.left" [style.top.px]="skill.top">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

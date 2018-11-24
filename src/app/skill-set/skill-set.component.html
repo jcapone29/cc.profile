@@ -1,0 +1,13 @@
+<app-section-title [title]="'Projects. Proof Of Concepts.'"></app-section-title>
+<div class="cc-container cc-skill-set-container">
+  <div class="skill-container" (appear)="onAppear(i)" *ngFor="let skill of appConfigSvc.siteConfig.skillSetConfig; let i = index" >
+    <div *ngIf="0 === i % 2" class="skill-container">
+          <app-project-image [skill]="skill" [even]="0 === i % 2" class="skill-img"></app-project-image>
+          <app-project-card [project]="skill" class="skill-info"></app-project-card>
+    </div>
+    <div *ngIf="0 !== i % 2" class="skill-container">
+    <app-project-card [project]="skill" class="skill-info"></app-project-card>
+    <app-project-image [skill]="skill" [even]="0 === i % 2" class="skill-img"></app-project-image>
+    </div>
+  </div>
+</div>

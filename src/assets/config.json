@@ -1,0 +1,130 @@
+{
+    "pages": [
+        {
+            "title": "Home",
+            "anchorName": "main",
+            "showNav": true,
+            "isTouched": false,
+            "icon": "home"
+        },
+        {
+            "title": "Skill Set",
+            "anchorName": "skill-set",
+            "showNav": false,
+            "isTouched": false,
+            "icon": "skill"
+        },
+        {
+            "title": "About Me",
+            "anchorName": "about-me",
+            "showNav": true,
+            "isTouched": false,
+            "icon": "gears-in-bald-head-side-view"
+        }
+    ],
+    "skillSetConfig": [
+        {
+            "title": "Energy Commodities",
+            "label": "power-plant",
+            "image": "power-plant",
+            "bodyText": "4 years of experience in Energy Commodities. Working in Power, Oil, Natural Gas, & Maritime for Genscape.",
+            "footerText": "string",
+            "visable": false
+        },
+        {
+            "title": "Machine Learning",
+            "label": "string",
+            "image": "neural-net",
+            "bodyText": "At Genscape I worked along side our Data Intellgience engineers. Our Team created an image processing system that enables users to Train, Backtest, and enable Real Time processing of Infared Camera images through a central Neural Network platform. Through the Alogrithm we are able to study Power Plant production activite. I currently co-hold a patent with Genscape under this intelectual propery",
+            "footerText": "",
+            "visable": false
+        },
+        {
+            "title": "Identiy Security",
+            "label": "string",
+            "image": "security",
+            "bodyText": "At Genscape I lead a team of engineers to implements a 3rd party Idenity Provider, Auth0, to solve the companies Single Sign On intiative. Leveraging SalesFroce I was able to design an architecutre to enable the company to manage all users through SalesForce",
+            "footerText": "string",
+            "visable": false
+        },
+        {
+            "title": "Stock Trading",
+            "label": "string",
+            "image": "stocks",
+            "bodyText": "One of my first solo project names REdge, was a concept where I build a system that would leverage public data from Reddit.com to find possible stock trading opertunites. By scraping a large number or relavant threads leveraging a dictionary of tickers, I was able to create a large databse of flagged comments and posts. From there I could use those posts, push them through a sentament analysis algorithm to get attempt to find postative and negative annotations assosiatd to the text. There i would then track users assosiated to number of tickers mentioned and marry them up to stock trends to attempt to find Super Users who I could follow more closely",
+            "footerText": "string",
+            "visable": false
+        },
+        {
+            "title": "Crypto Trading",
+            "label": "string",
+            "image": "crypto",
+            "bodyText": "Tieing an API and some Azure Functions to the Bitfinex API, I wrote a trading bot that would leverage base level Move Average calculations to trade crypto currencies in real time. I would run a conncurent thread every 5 minutes with a dictionary of mover average windows and time frames through the crypto real time princing to find the most optimal positions at that moment. Overall the bot proved to be successful and net a profit after the 3 month trial run.",
+            "footerText": "string",
+            "visable": false
+        },
+        {
+            "title": "Workflow Optimization",
+            "label": "string",
+            "image": "workflow",
+            "bodyText": "string",
+            "footerText": "string",
+            "visable": false
+        },
+        {
+            "title": "Innovation",
+            "label": "string",
+            "image": "light-bulb",
+            "bodyText": "string",
+            "footerText": "string",
+            "visable": false
+        }
+    ],
+    "codeLanguagesConfig": [
+        {
+            "language": "angular",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "auth0",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "aws",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "azure",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "dotnet",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "python",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "react",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "salesforce",
+            "top": 0,
+            "left":0
+        },
+        {
+            "language": "sql",
+            "top": 0,
+            "left":0
+        }
+    ]
+}

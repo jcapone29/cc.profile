@@ -1,0 +1,47 @@
+
+@import "../../../assets/styles/tokens.scss";
+
+
+.skill-container{
+    width: 100%;
+    height: 15em;
+    margin-top: 0em;
+    display: flex;
+    padding: 4em 0em 0em 0em;
+    border-bottom: 4px solid transparent;
+
+}
+
+.cc-card{
+    max-width: 29em;
+    height: 100%; 
+}
+
+.card-left{
+    transform: rotate(-26deg); 
+}
+.card-right{
+    transform: rotate(26deg); 
+}
+.skill-info{
+    margin: 5px;
+}
+
+.skill-info-container{
+    margin: 0em 1em 0em 8em;
+    color: $cc-white;
+    text-align: left;
+}
+
+.skill-title{
+    font-size: 1.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $cc-coral;
+}
+.skill-body {
+    margin-top: 1em;    
+    max-width: 25em;
+}

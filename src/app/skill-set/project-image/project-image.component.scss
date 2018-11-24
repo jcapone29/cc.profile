@@ -1,0 +1,74 @@
+@import "../../../assets/styles/tokens.scss";
+
+.cc-card{
+    max-width: 29em;
+    height: 100%;
+}
+
+
+.cc-card-container{
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+    box-shadow: 9px 8px 10px -4px $cc-deep-black;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.blank-card{
+    box-shadow: none;
+    background: transparent;
+
+}
+
+.cc-card-title-container{
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 0;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.cc-card-title {
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: auto;
+    width: 11em;
+    margin-right: auto;
+    // border: 8px solid $cc-coral;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+
+}
+.light-bulb{
+    background-image: url('./../../../assets/images/skill-set/light-bulb.jpg')
+}
+
+.neural-net {
+    background-image: url('./../../../assets/images/skill-set/neural-net.jpg')
+}
+.power-plant {
+    background-image: url('./../../../assets/images/skill-set/power-plant.jpg')
+}
+.security {
+    background-image: url('./../../../assets/images/skill-set/security.jpg')
+}
+.crypto {
+    background-image: url('./../../../assets/images/skill-set/crypto.jpg')
+}
+.stock-trades {
+    background-image: url('./../../../assets/images/skill-set/stock-trades.jpg')
+}
+.workflow {
+    background-image: url('./../../../assets/images/skill-set/workflow.jpg')
+}
+.stocks {
+    background-image: url('./../../../assets/images/skill-set/stocks.png')
+}
