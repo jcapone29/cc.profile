@@ -12,7 +12,6 @@ import { MnFullpageModule } from 'ngx-fullpage/index';
 import  'jquery';
 import 'fullpage.js';
 import { SkillSetComponent } from './skill-set/skill-set.component';
-import { AboutMeComponent } from './about-me/about-me.component';
 import { SideNavComponent } from './side-nav/side-nav.component'
 import { APP_INITIALIZER } from '@angular/core';
 import { AppConfigService } from './shared/services/app-config.service';
@@ -22,6 +21,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { ProjectCardComponent } from './skill-set/project-card/project-card.component';
 import { ProjectImageComponent } from './skill-set/project-image/project-image.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
@@ -29,13 +29,13 @@ import { ProjectImageComponent } from './skill-set/project-image/project-image.c
     AppComponent,
     SplashPageComponent,
     SkillSetComponent,
-    AboutMeComponent,
     SideNavComponent,
     AppearDirective,
     CodeLanguagesComponent,
     SectionTitleComponent,
     ProjectCardComponent,
-    ProjectImageComponent
+    ProjectImageComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,

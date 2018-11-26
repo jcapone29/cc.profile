@@ -1,7 +1,7 @@
 {
     "pages": [
         {
-            "title": "Home",
+            "title": "Concurrent Analytics",
             "anchorName": "main",
             "showNav": true,
             "isTouched": false,
@@ -22,12 +22,49 @@
             "icon": "gears-in-bald-head-side-view"
         }
     ],
+    "resources": [
+        {
+            "title": "Website Design",
+            "icon": "design",
+            "bodyText": "Develop customer inerfaces to differenciate your company from the compotition who uses basic templated design systems."
+        },
+        {
+            "title": "API Managment",
+            "icon": "api",
+            "bodyText": "Help your customers access your data in a more seemless fasion using API Managment Systems following the latest in Open API 3.0 ."
+        },
+        {
+            "title": "Single Sign On",
+            "icon": "sso",
+            "bodyText": "Trying to maintain multiple user managment systems? Consolidate your user base under a single sign on platform to better understand your consumers."
+        },
+        {
+            "title": "Data Visualization",
+            "icon": "visualization",
+            "bodyText": "Customers may love the idea of your data, but don't have time to learn the raw data. Visualization systems make any dataset more appealing."
+        },
+        {
+            "title": "Data Managment",
+            "icon": "managment",
+            "bodyText": "With our help your data dictionaty help, you're team will be integrate and manage data faster then your compotision."
+        },
+        {
+            "title": "Workflow Optimization",
+            "icon": "workflow",
+            "bodyText": "The most expensive piece of any company is labor, don't waste time on button pushing work, automate."
+        },
+        {
+            "title": "Data Scraping",
+            "icon": "magnet",
+            "bodyText": "Need data from places basic scraping tools can't handle? Some data is just too ticky to aquire, which is where we come in."
+        }
+    ],
     "skillSetConfig": [
         {
             "title": "Energy Commodities",
             "label": "power-plant",
             "image": "power-plant",
-            "bodyText": "4 years of experience in Energy Commodities. Working in Power, Oil, Natural Gas, & Maritime for Genscape.",
+            "bodyText": "Four years of experience in Energy Commodities. Working in Power, Oil, Natural Gas, & Maritime for Genscape. Deep knowledge of running effective SCRUM based technology teams to ensure delivery before schedule. Working with the latest technologies and a complex market initiatives to ensure customer satisfaction and retention. ",
             "footerText": "string",
             "visable": false
         },
@@ -62,69 +99,35 @@
             "bodyText": "Tieing an API and some Azure Functions to the Bitfinex API, I wrote a trading bot that would leverage base level Move Average calculations to trade crypto currencies in real time. I would run a conncurent thread every 5 minutes with a dictionary of mover average windows and time frames through the crypto real time princing to find the most optimal positions at that moment. Overall the bot proved to be successful and net a profit after the 3 month trial run.",
             "footerText": "string",
             "visable": false
-        },
-        {
-            "title": "Workflow Optimization",
-            "label": "string",
-            "image": "workflow",
-            "bodyText": "string",
-            "footerText": "string",
-            "visable": false
-        },
-        {
-            "title": "Innovation",
-            "label": "string",
-            "image": "light-bulb",
-            "bodyText": "string",
-            "footerText": "string",
-            "visable": false
         }
     ],
     "codeLanguagesConfig": [
         {
-            "language": "angular",
-            "top": 0,
-            "left":0
+            "title": "Cloud Services",
+            "icon": "",
+            "services": [
+                "azure",
+                "aws"
+            ]
         },
         {
-            "language": "auth0",
-            "top": 0,
-            "left":0
+            "title": "Supported Languages",
+            "icon": "",
+            "services": [
+                "angular",
+                "react",
+                "dotnet",
+                "python",
+                "sql"
+            ]
         },
         {
-            "language": "aws",
-            "top": 0,
-            "left":0
-        },
-        {
-            "language": "azure",
-            "top": 0,
-            "left":0
-        },
-        {
-            "language": "dotnet",
-            "top": 0,
-            "left":0
-        },
-        {
-            "language": "python",
-            "top": 0,
-            "left":0
-        },
-        {
-            "language": "react",
-            "top": 0,
-            "left":0
-        },
-        {
-            "language": "salesforce",
-            "top": 0,
-            "left":0
-        },
-        {
-            "language": "sql",
-            "top": 0,
-            "left":0
+            "title": "Supported Languages",
+            "icon": "",
+            "services": [
+                "auth0",
+                "salesforce"
+            ]
         }
     ]
 }

@@ -4,12 +4,16 @@
 
 .skill-container{
     width: 100%;
-    height: 15em;
     margin-top: 0em;
     display: flex;
-    padding: 4em 0em 0em 0em;
+    margin: 1em;
+    justify-content: center;
     border-bottom: 4px solid transparent;
 
+}
+
+.reverse {
+    flex-wrap: wrap-reverse;
 }
 
 .skill-info{
@@ -18,6 +22,8 @@
 
 .skill-img{
     width: 33%;
+    min-width: 25em;
+    min-height: 25em;
 }
 
 // .cc-card-title-container:hover{

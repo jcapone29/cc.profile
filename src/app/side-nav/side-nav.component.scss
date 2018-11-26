@@ -197,3 +197,23 @@ ul {
     from {background-color: transparent; opacity: 0;}
     to {background-color: $cc-coral; opacity: 1;}
 }
+
+
+.hamburger{
+    padding:10px 10px;
+}
+.hamburger-box{
+    width: 30px;
+}
+.hamburger-inner:before {
+    width: 30px;
+    background-color: #FFFFFF !important
+};
+.hamburger-inner {
+    width: 30px;
+    background-color: #FFFFFF !important
+};
+.hamburger-inner:after {
+    width: 30px;
+    background-color: #FFFFFF !important
+};

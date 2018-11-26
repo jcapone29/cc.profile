@@ -16,25 +16,12 @@ import { state } from '@angular/animations';
 })
 export class CodeLanguagesComponent implements OnInit {
 
-  @ViewChild('innercontainer') elementView: ElementRef;
   public index = 0;
   public freeze = false;
   constructor(public appConfigSvc: AppConfigService) { }
 
   ngOnInit() {
-this.moveIcons();
+
   }
   
-
-
-
-
-  public moveIcons() {
-      this.appConfigSvc.siteConfig.codeLanguagesConfig[this.index].top = Math.floor(Math.random() * this.elementView.nativeElement.offsetHeight) + 1;
-      this.appConfigSvc.siteConfig.codeLanguagesConfig[this.index].left = Math.floor(Math.random() * this.elementView.nativeElement.offsetWidth) + 1;
-      this.index = this.index === this.appConfigSvc.siteConfig.codeLanguagesConfig.length - 1 ? 0 :  this.index +1;
-    setTimeout(() => {
-      this.moveIcons();      
-    }, 200);
-  }
 }

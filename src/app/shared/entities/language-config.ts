@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class LanguageConfig{
-    language: string;
-    top: number;
-    left: number;
+    title: string;
+    icon: string;
+    services: string[];
 }

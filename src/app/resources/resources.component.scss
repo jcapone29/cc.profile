@@ -1,0 +1,74 @@
+@import "../../assets/styles/tokens.scss";
+
+
+.cc-resource-card-container{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.cc-resource-card-title{
+    font-size: 1.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $cc-coral;
+    top: -2em;
+    position: relative;
+}
+.cc-resource-card{
+    margin: 4em;
+}
+.cc-resource-card-header{
+    position: relative;
+    height: 6em;
+    width: 6em;
+    border-radius: 50%;
+    margin: auto;
+    top: -4.2em;
+    z-index: 1;
+    background-color:  $cc-coral;
+}
+
+.cc-resource-card-body{
+    margin-top: 1em;
+    max-width: 15em;
+    color: $cc-white;
+    position: relative;
+    top: -3em;
+    font-size: 1em;
+    margin: auto;
+}
+
+.cc-anchor-title {
+    width: 1em;
+    height: 1em;
+    background-size: 1em;
+    font-size: 3em;
+    margin: auto;
+    background-repeat: no-repeat;
+    top: 0.5em;
+    position: relative;
+}
+
+.design {
+    background-image: url('./../../assets/icons/resources/design.svg')
+}
+.api {
+    background-image: url('./../../assets/icons/resources/api.svg')
+}
+.sso {
+    background-image: url('./../../assets/icons/resources/sso.svg')
+}
+.visualization {
+    background-image: url('./../../assets/icons/resources/visualization.svg')
+}
+.managment {
+    background-image: url('./../../assets/icons/resources/managment.svg')
+}
+.workflow {
+    background-image: url('./../../assets/icons/resources/workflow.svg')
+}
+.magnet {
+    background-image: url('./../../assets/icons/resources/magnet.svg')
+}

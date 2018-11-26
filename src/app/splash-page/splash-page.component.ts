@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ViewChild } from '@angular/core';
 import { Input } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { AppConfigService } from '../shared/services/app-config.service';
 
 @Component({
   selector: 'app-splash-page',
@@ -13,10 +14,12 @@ export class SplashPageComponent implements OnInit {
   @Input() splashHeight: number;
   @Input() playVideo: boolean;
   @Input() scrollPosition: number;
+  public title : string;
   
-  constructor() { }
+  constructor(public appConfigSvc: AppConfigService) { }
   
   ngOnInit() {
+    this.title = this.appConfigSvc.siteConfig.pages[0].title;
     this.splashHeight = (window.innerHeight);
     //this.playVideo ? this.videoplayer.nativeElement.play() :  this.videoplayer.nativeElement.pause();
   }

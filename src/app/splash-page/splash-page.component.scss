@@ -24,13 +24,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-image: url('./../../assets/images/splash-background-dark.png');
+    // background-image: url('');
     z-index: -1;  
 }
 .cc-video-wall {
   left: 0;
   z-index: -1;
-  position: absolute;
+  position: fixed;
 }
 .cc-data-img-lock{
   position: fixed;
