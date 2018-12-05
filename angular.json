@@ -21,7 +21,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/assets/images"
+              "src/assets/images",
+              "src/web.config"
             ],
             "styles": [
               "src/styles.scss",
@@ -29,7 +30,8 @@
             ],
             "scripts": [
               "./node_modules/fullpage.js/dist/fullpage.min.js",
-              "./node_modules/jquery/dist/jquery.min.js"
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/leader-line/leader-line.min.js"
             ]
           },
           "configurations": {

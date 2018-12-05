@@ -1,0 +1,10 @@
+<app-section-title [title]="'Resources'"></app-section-title>
+<div class="cc-container cc-resource-card-container">
+<div class="cc-resource-card" *ngFor="let resource of appConfigSvc.siteConfig.resources;">
+    <div class="cc-resource-card-header" >
+        <div class="cc-anchor-title" [ngClass]="resource.icon"></div>
+      </div>
+      <div class="cc-resource-card-title">{{resource.title}}</div>
+      <div class="cc-resource-card-body">{{resource.bodyText}}</div>
+</div>
+</div>

@@ -1,0 +1,80 @@
+
+@import "../../../assets/styles/tokens.scss";
+
+::ng-deep .continer-full-page{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+::ng-deep .cc-section {
+    width: 100%;
+}
+
+
+::ng-deep .cc-logo {    
+    height: 5em;
+    width: 10em;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 12em;
+    background-position-x: -2em;
+    background-image: url('./../../../assets/images/logo-300.svg')
+}
+
+.cc-video-wall {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+  }
+  .cc-data-img-lock{
+
+  
+  }
+
+.cc-top-nav{
+    width: 100%;
+    height: 4em;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    background-color: #1f070852;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+
+::ng-deep .cc-nav-active::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border-radius: 50%;
+    margin-top: 4em;
+    border: 1px solid $cc-coral;
+}
+
+
+
+::ng-deep .cc-container {    
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #121111;
+    padding: 5em 0em 5em 0em;
+}
+
+
+
+::ng-deep .y-axis-align{
+    vertical-align: inherit !important;
+}
+

@@ -1,0 +1,44 @@
+
+@import "../../../assets/styles/tokens.scss";
+
+
+.skill-container{
+    width: 100%;
+    margin-top: 0em;
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+
+}
+
+.reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.skill-info{
+    width: 66%;
+}
+
+.skill-img{
+    width: 33%;
+    min-width: 25em;
+    min-height: 25em;
+}
+
+// .cc-card-title-container:hover{
+//     background-color: $cc-coral;
+//     cursor: pointer;
+
+// }
+
+.cc-card-line{
+    
+    -moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+
+

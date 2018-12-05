@@ -1,0 +1,98 @@
+@import "../../../assets/styles/tokens.scss";
+
+
+.cc-resource-card-container{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.cc-workflow-bubble-header{
+    position: relative;
+    height: 4em;
+    width: 4em;
+    border-radius: 50%;
+    margin: auto;
+    z-index: 1;
+    border: 1px solid $cc-coral;
+}
+
+.cc-workflow-bubble-header-mini{
+    position: relative;
+    width: 7em;
+    z-index: 1;
+
+}
+
+
+.cc-workflow-bubble-bottom {
+    right: 20em;
+}
+
+.cc-workflow-bubble-top {
+    left: 20em;
+}
+
+.cc-workflow-bubble-anchor-title{
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $cc-coral;
+    position: relative;
+    width: 8em;
+    text-align: center;
+}
+.cc-workflow-bubble{
+    height: 9em;
+    display: flex;
+    flex: 100%;
+    padding: 1em;
+}
+
+.cc-workflow-bubble-header-mini-title{
+    color: $cc-coral;
+    position: relative;
+    font-size: 2em;
+    width: 5em;
+    margin-bottom: .5em;
+}
+
+.cc-mini-bubble-top{
+    
+}
+
+.cc-mini-bubble-bottom{
+    right: 3em;
+}
+
+.cc-workflow-icon{
+    width: 3em;
+    height: 3em;
+    background-size: 2em;
+    font-size: 3em;
+    margin: auto;
+    background-repeat: no-repeat;
+    top: 0.5em;
+}
+
+
+.user {
+    background-image: url('./../../../assets/icons/workflow/user.svg')
+}
+.goal {
+    background-image: url('./../../../assets/icons/workflow/goal.svg')
+}
+
+.analytics {
+    background-image: url('./../../../assets/icons/workflow/analytics.svg')
+}
+.sketch {
+    background-image: url('./../../../assets/icons/workflow/sketch.svg')
+}
+
+.settings {
+    background-image: url('./../../../assets/icons/workflow/settings.svg')
+}
+.globe {
+    background-image: url('./../../../assets/icons/workflow/earth-globe.svg')
+}

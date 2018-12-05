@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9ad70297-e251-4639-9741-01f7e8f2cfdf/resourceGroups/capone-io/providers/Microsoft.Web/sites/capone-io",
+    "appService.deploySubpath": "dist\\joe-capone-profile"
+}

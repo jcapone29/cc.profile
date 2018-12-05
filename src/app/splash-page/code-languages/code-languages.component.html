@@ -1,0 +1,14 @@
+<app-section-title [title]="'Tool Kit.'"></app-section-title>
+<div class="cc-container code-language-container">
+    <div class="cc-container code-language-card-container">
+        <div class="code-language-card" *ngFor="let languages of appConfigSvc.siteConfig.codeLanguagesConfig;">
+            <div class="code-language-card-header" >
+                <div class="cc-anchor-title" [ngClass]="languages.icon"></div>
+              </div>
+              <div class="cc-language-icon-container"  *ngFor="let service of languages.services;">
+                  <div class="code-language-card-header" [ngClass]="service"></div>
+              </div>
+        </div>
+        </div>
+</div>
+

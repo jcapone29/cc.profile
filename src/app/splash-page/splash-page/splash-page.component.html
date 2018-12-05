@@ -1,0 +1,17 @@
+    <div class="cc-container" [style.height.px]="splashHeight" (window:resize)="onResize($event)">
+        <div [style.height.px]="splashHeight" (window:resize)="onResize($event)" class="splash-container "></div>
+        <div   class="cc-video-wall"  [style.height.px]="splashHeight" >
+               <video autoplay muted loop id="myVideo" oncanplay="this.play()" onloadedmetadata="this.muted = true"  #videoPlayer>
+                        <source src="./../assets/videos/Hologram_Planet_by_nuva.mp4" type="video/mp4">
+                      </video>
+        </div>
+        <div class="title-caption tracking-in-contract cc-mark">{{title}}</div>         
+        <div class="cc-call-me-container animated fadeInUp delay-3s">
+            <div class="cc-info-btn ">
+                Contact
+            </div>
+            <a class="cc-info-btn " href="https://github.com/jcapone29" target="_blank">
+                GitHub 
+            </a>
+        </div>
+     </div>

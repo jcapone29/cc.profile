@@ -1,7 +1,7 @@
 {
     "pages": [
         {
-            "title": "Concurrent Analytics",
+            "title": "Concurrent Engineering",
             "anchorName": "main",
             "showNav": true,
             "isTouched": false,
@@ -128,6 +128,50 @@
                 "auth0",
                 "salesforce"
             ]
+        }
+    ],
+    "workFlowConfig": [
+        {
+            "id" : "account",
+            "workflowId" : "account-workflow",
+            "icon": "user",
+            "title": "Sign Up",
+            "bodyText": ""         
+        },
+        {
+            "id" : "propose",
+            "workflowId" : "propose-workflow",
+            "icon": "goal",
+            "title": "Set Goals",
+            "bodyText": ""         
+        },
+        {
+            "id" : "estimate",
+            "workflowId" : "estimate-workflow",
+            "icon": "analytics",
+            "title": "Estimate",
+            "bodyText": ""         
+        },
+        {
+            "id" : "design",
+            "workflowId" : "design-workflow",
+            "icon": "sketch",
+            "title": "Design",
+            "bodyText": ""         
+        },
+        {
+            "id" : "iterate",
+            "workflowId" : "iterate-workflow",
+            "icon": "settings",
+            "title": "Iterate",
+            "bodyText": ""         
+        },
+        {
+            "id" : "market",
+            "workflowId" : "market-workflow",
+            "icon": "globe",
+            "title": "Go To Market",
+            "bodyText": ""         
         }
     ]
 }
