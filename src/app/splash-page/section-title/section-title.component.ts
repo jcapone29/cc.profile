@@ -13,7 +13,6 @@ export class SectionTitleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.title)
   }
 
 }

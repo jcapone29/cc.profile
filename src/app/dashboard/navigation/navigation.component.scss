@@ -1,0 +1,10 @@
+@import "../../../assets/styles/tokens.scss";
+
+.cc-nav-container{
+    display: flex;
+    flex-direction: column;
+    width: $cc-nav-width;
+    background-color: $cc-deep-black;
+    height: 100%;
+    overflow: auto;
+}

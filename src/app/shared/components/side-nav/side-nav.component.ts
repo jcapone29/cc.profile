@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
-import { AppConfigService } from '../../shared/services/app-config.service';
+import { AppConfigService } from '../../services/app-config.service';
+
 
 @Component({
   selector: 'app-side-nav',

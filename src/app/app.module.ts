@@ -13,19 +13,28 @@ import { AppConfigService } from './shared/services/app-config.service';
 import { AppearDirective } from './shared/directives/appear';
 import { CodeLanguagesComponent } from './splash-page/code-languages/code-languages.component';
 import { SkillSetComponent } from './splash-page/skill-set/skill-set.component';
-import { SideNavComponent } from './splash-page/side-nav/side-nav.component';
+
 import { SectionTitleComponent } from './splash-page/section-title/section-title.component';
 import { ProjectCardComponent } from './splash-page/skill-set/project-card/project-card.component';
 import { ProjectImageComponent } from './splash-page/skill-set/project-image/project-image.component';
 import { WorkflowComponent } from './splash-page/workflow/workflow.component';
 import { ResourcesComponent } from './splash-page/resources/resources.component';
-
 import  'jquery';
-import 'fullpage.js';
 import  'leader-line';
 import { SplashPageComponent } from './splash-page/splash-page/splash-page.component';
 import { MainViewComponent } from './splash-page/main-view/main-view.component';
-
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './shared/routing/app-routing.module';
+import { CallbackComponent } from './shared/auth/callback/callback.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { AuthGuard } from './shared/auth/auth.guard';
+import { ProposalComponent } from './dashboard/proposal/proposal.component';
+import { ProjectsComponent } from './dashboard/projects/projects.component';
+import { NotesComponent } from './dashboard/notes/notes.component';
+import { StoryBoardComponent } from './dashboard/projects/story-board/story-board.component';
+import { SideNavComponent } from './shared/components/side-nav/side-nav.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { NavigationComponent } from './dashboard/navigation/navigation.component';
 
 
 @NgModule({
@@ -41,7 +50,15 @@ import { MainViewComponent } from './splash-page/main-view/main-view.component';
     ProjectImageComponent,
     ResourcesComponent,
     WorkflowComponent,
-    MainViewComponent
+    MainViewComponent,
+    CallbackComponent,
+    DashboardComponent,
+    ProposalComponent,
+    ProjectsComponent,
+    NotesComponent,
+    StoryBoardComponent,
+    HeaderComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +67,8 @@ import { MainViewComponent } from './splash-page/main-view/main-view.component';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    RouterModule,
+    AppRoutingModule,
     MnFullpageModule.forRoot()
   ],
   exports: [
@@ -57,6 +76,7 @@ import { MainViewComponent } from './splash-page/main-view/main-view.component';
   ],
   providers: [
     AppConfigService,
+    AuthGuard,
      { provide: APP_INITIALIZER, 
       useFactory: (config: AppConfigService) => () => config.load(),
        deps: [AppConfigService], 

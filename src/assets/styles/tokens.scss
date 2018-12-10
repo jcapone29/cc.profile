@@ -1,12 +1,13 @@
 
 // Colors
  $cc-blue: #0084ff;
- $cc-white: #ebdbdb;
+ $cc-white: #ffffff;
  $cc-coral: #EE343C;
  $cc-black: #121111;
  $cc-deep-black : #000000;
- $cc-fade-black:#ffffff0a;
+ $cc-fade-black:#3C3C3C;
  $cc-fade-gray:#b1b1b1;
+ $cc-gray: #F0F2F5;
  $cc-splash-background:  rgb(35, 28, 28);
 
 //Borders
@@ -18,3 +19,9 @@
 //  Spacing
  $cc-margin-xs : 1em;
 
+//Mobile 
+$cc-mobile-small : 320px;
+$cc-mobile-large : 1080px;
+
+//Navigation
+$cc-nav-width: 4em;

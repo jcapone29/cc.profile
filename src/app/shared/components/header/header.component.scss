@@ -1,0 +1,42 @@
+@import "../../../../assets/styles/tokens.scss";
+
+.cc-top-nav{
+    width: 100%;
+    height: 4em;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    background-color: #1f070852;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.cc-logo {    
+    height: 5em;
+    width: 10em;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: 12em;
+    background-position-x: -2em;
+    background-image: url('./../../../../assets/images/logo-300.svg');
+    @media all and (max-width: $cc-mobile-large) {
+        height: 8em;
+        width: 15em;
+        background-size: 25em;
+      }
+}
+
+.cc-nav-active::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 50%;
+    margin-top: 4em;
+    border: 1px solid $cc-coral;
+    @media all and (max-width: $cc-mobile-large) {
+        margin-top: 8em;
+      }
+}

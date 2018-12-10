@@ -38,7 +38,7 @@ export class WorkflowComponent implements AfterViewInit {
           this.connectMainWorkflows(flow, index);                
           index++;
         }
-        this.connectSubWorkflows(flow) 
+       // this.connectSubWorkflows(flow) 
       });
     }
     catch (e){

@@ -10,6 +10,11 @@
     justify-content: center;
     border-bottom: 4px solid transparent;
 
+    @media all and (max-width: $cc-mobile-large) {
+        margin-top: 3em;
+        flex-wrap: wrap-reverse;
+      }
+
 }
 
 .reverse {
@@ -18,6 +23,9 @@
 
 .skill-info{
     width: 66%;
+    @media all and (max-width: $cc-mobile-large) {
+        width: 100%;
+      }
 }
 
 .skill-img{

@@ -1,4 +1,11 @@
 {
+    "auth0": {
+        "clientID": "SrkCGN6NEpCoDWgSLEtNG1SOt1sBmrG3",
+        "domain": "concurrent.auth0.com",
+        "responseType": "token id_token",
+        "redirectUri": "http://localhost:4200/callback",
+        "scope": "openid email"
+    },
     "pages": [
         {
             "title": "Concurrent Engineering",
@@ -171,6 +178,26 @@
             "workflowId" : "market-workflow",
             "icon": "globe",
             "title": "Go To Market",
+            "bodyText": ""         
+        }
+    ],
+    "dashboardMiniWidgets": [
+        {
+            "id" : "proposal",
+            "icon": "proposal",
+            "title": "Proposals",
+            "bodyText": ""         
+        },
+        {
+            "id" : "projects",
+            "icon": "projects",
+            "title": "Projects",
+            "bodyText": ""         
+        },
+        {
+            "id" : "notes",
+            "icon": "notes",
+            "title": "Notes",
             "bodyText": ""         
         }
     ]

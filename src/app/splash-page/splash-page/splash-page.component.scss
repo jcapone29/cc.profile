@@ -8,6 +8,9 @@
     width: 100%;
     margin: auto;
     position: relative;
+    @media all and (max-width: $cc-mobile-large) {
+      font-size: 3.5em;
+    }
 }
 
 .cc-container{
@@ -19,13 +22,8 @@
   top: 0;
   left: 0;
   position: fixed;
-  background: $cc-splash-background;
-  background: transparent;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    // background-image: url('');
-    z-index: -1;  
+  background: $cc-deep-black;
+  z-index: -1;  
 }
 .cc-video-wall {
   left: 0;
@@ -54,8 +52,20 @@
   color: $cc-white;
   font-size: 1.2em;
   line-height: 2;
-  letter-spacing: .5em;
+  letter-spacing: .2em;
   text-decoration: none;
+  transition: background-color 0.5s ease;
+
+  @media all and (max-width: $cc-mobile-large) {
+    font-size: 3em;
+    margin: .5em;
+    margin-top: 4em;
+  }
+}
+
+.cc-info-btn:hover{
+  cursor: pointer;
+  background-color: $cc-coral;
 }
 
 
@@ -71,10 +81,6 @@
 .tracking-in-contract:nth-child(1){
   animation-delay: 5s !important;
 }
-.tracking-in-contract:nth-child(2){
-
-}
-
 
 
  @-webkit-keyframes tracking-in-contract {

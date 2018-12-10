@@ -11,8 +11,7 @@ export class MainViewComponent implements OnInit {
   public scrollPosition = 0;
   public splashHeight : number;
 
-  constructor() { 
-    
+  constructor() {   
   }
 
   ngOnInit() {

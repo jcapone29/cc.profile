@@ -1,8 +1,6 @@
 <div class="continer-full-page">
-    <div class="cc-top-nav" [ngClass]="showNav ? 'cc-nav-active' : 'cc-nav-inactive'">
-        <div class="cc-logo"></div>
-    </div>
-    <app-splash-page  [splashHeight]="splashHeight" [playVideo]="showNav" [scrollPosition]="scrollPosition"></app-splash-page>
+    <app-header [showNav]="showNav"></app-header>
+    <app-splash-page  [playVideo]="showNav" [scrollPosition]="scrollPosition"></app-splash-page>
     <app-resources></app-resources>
     <app-workflow></app-workflow>
     <app-skill-set></app-skill-set>

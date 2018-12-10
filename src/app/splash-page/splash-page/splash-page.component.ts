@@ -3,6 +3,7 @@ import { ViewChild } from '@angular/core';
 import { Input } from '@angular/core';
 import { HostListener } from '@angular/core';
 import { AppConfigService } from '../../shared/services/app-config.service';
+import { AuthService } from 'src/app/shared/auth/auth.service';
 
 @Component({
   selector: 'app-splash-page',
@@ -11,20 +12,21 @@ import { AppConfigService } from '../../shared/services/app-config.service';
 })
 export class SplashPageComponent implements OnInit {
  // @ViewChild('videoPlayer') videoplayer: any;
-  @Input() splashHeight: number;
+  public splashHeight: number;
   @Input() playVideo: boolean;
   @Input() scrollPosition: number;
   public title : string;
   
-  constructor(public appConfigSvc: AppConfigService) { }
+  
+  constructor(public appConfigSvc: AppConfigService, public authConfigSvc: AuthService) { }
   
   ngOnInit() {
     this.title = this.appConfigSvc.siteConfig.pages[0].title;
-    this.splashHeight = (window.innerHeight);
-    //this.playVideo ? this.videoplayer.nativeElement.play() :  this.videoplayer.nativeElement.pause();
+    this.splashHeight = window.innerHeight;    
   }
 
-  onResize(event) {   
-    this.splashHeight = event.target.innerHeight;
-  }
+  
+  @HostListener('window:scroll', ['$event']) onScrollEvent(event){
+    this.splashHeight =  window.innerHeight;
+  }  
 }
