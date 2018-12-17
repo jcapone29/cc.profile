@@ -13,7 +13,6 @@ import { AppConfigService } from './shared/services/app-config.service';
 import { AppearDirective } from './shared/directives/appear';
 import { CodeLanguagesComponent } from './splash-page/code-languages/code-languages.component';
 import { SkillSetComponent } from './splash-page/skill-set/skill-set.component';
-
 import { SectionTitleComponent } from './splash-page/section-title/section-title.component';
 import { ProjectCardComponent } from './splash-page/skill-set/project-card/project-card.component';
 import { ProjectImageComponent } from './splash-page/skill-set/project-image/project-image.component';
@@ -32,9 +31,9 @@ import { ProposalComponent } from './dashboard/proposal/proposal.component';
 import { ProjectsComponent } from './dashboard/projects/projects.component';
 import { NotesComponent } from './dashboard/notes/notes.component';
 import { StoryBoardComponent } from './dashboard/projects/story-board/story-board.component';
-import { SideNavComponent } from './shared/components/side-nav/side-nav.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { NavigationComponent } from './dashboard/navigation/navigation.component';
+import { BusinessPlanComponent } from './splash-page/business-plan/business-plan.component';
 
 
 @NgModule({
@@ -42,7 +41,6 @@ import { NavigationComponent } from './dashboard/navigation/navigation.component
     AppComponent,
     SplashPageComponent,
     SkillSetComponent,
-    SideNavComponent,
     AppearDirective,
     CodeLanguagesComponent,
     SectionTitleComponent,
@@ -58,7 +56,8 @@ import { NavigationComponent } from './dashboard/navigation/navigation.component
     NotesComponent,
     StoryBoardComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    BusinessPlanComponent
   ],
   imports: [
     BrowserModule,

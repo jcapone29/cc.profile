@@ -1,0 +1,19 @@
+@import "../../../assets/styles/tokens.scss";
+
+
+
+.cc-business-plan {
+    height: 45em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./../../../assets/images/splash-background-dark.png')
+}
+
+.cc-plan{
+    position: relative;
+    margin: auto;
+    font-size: 2em;
+    width: 20em;
+    letter-spacing: .2em;
+    color: white;
+}

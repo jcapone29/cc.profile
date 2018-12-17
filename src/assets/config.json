@@ -138,67 +138,94 @@
         }
     ],
     "workFlowConfig": [
-        {
-            "id" : "account",
-            "workflowId" : "account-workflow",
-            "icon": "user",
-            "title": "Sign Up",
-            "bodyText": ""         
-        },
-        {
-            "id" : "propose",
-            "workflowId" : "propose-workflow",
-            "icon": "goal",
-            "title": "Set Goals",
-            "bodyText": ""         
-        },
-        {
-            "id" : "estimate",
-            "workflowId" : "estimate-workflow",
-            "icon": "analytics",
-            "title": "Estimate",
-            "bodyText": ""         
-        },
-        {
-            "id" : "design",
-            "workflowId" : "design-workflow",
-            "icon": "sketch",
-            "title": "Design",
-            "bodyText": ""         
-        },
-        {
-            "id" : "iterate",
-            "workflowId" : "iterate-workflow",
-            "icon": "settings",
-            "title": "Iterate",
-            "bodyText": ""         
-        },
-        {
-            "id" : "market",
-            "workflowId" : "market-workflow",
-            "icon": "globe",
-            "title": "Go To Market",
-            "bodyText": ""         
-        }
+        [
+            {
+                "id": "account",
+                "icon": "user",
+                "title": "Sign Up",
+                "connect": ["design-empty"]
+            }
+        ],
+        [
+            {
+                "id": "connect",
+                "icon": "workflow",
+                "title": "We'll estimate",
+                "connect": ["design"]
+            },
+            {
+                "id": "design-empty",
+                "icon": "goal",
+                "connect": ["connect","plan"]
+            },
+            {
+                "id": "plan",
+                "icon": "project",
+                "title": "Set up the plan",
+                "connect": ["set-goals"]
+            }
+        ],
+        [
+            {
+                "id": "design",
+                "icon": "settings",
+                "title": "Design",
+                "connect": ["poc"]
+            },
+            {
+                "id": "set-goals",
+                "icon": "goal",
+                "title": "Sign Up",
+                "connect": ["poc"]
+            }
+        ],
+        [
+            {
+                "placeholder": true
+            },
+            {
+                "id": "poc",
+                "icon": "design",
+                "title": "Design",
+                "connect": ["conversation"]
+            },
+            {
+                "placeholder": true
+            }
+        ],
+        [
+            {
+                "placeholder": true
+            },
+            {
+                "id": "conversation",
+                "icon": "globe",
+                "title": "Design"
+            },
+            {
+                "placeholder": true
+            }
+        ]
+
     ],
     "dashboardMiniWidgets": [
         {
-            "id" : "proposal",
+            "id": "proposal",
             "icon": "proposal",
             "title": "Proposals",
-            "bodyText": ""         
+            "bodyText": ""
         },
         {
-            "id" : "projects",
+            "id": "projects",
             "icon": "projects",
             "title": "Projects",
-            "bodyText": ""         
+            "bodyText": ""
         },
         {
-            "id" : "notes",
+            "id": "notes",
             "icon": "notes",
             "title": "Notes",
-            "bodyText": ""         
+            "bodyText": ""
         }
     ]
 }

@@ -4,12 +4,17 @@
   <app-navigation class="cc-sidebar"></app-navigation>
   <div class="cc-main">
     <div class="cc-mini-widget-container">
-        <div class="cc-mini-widget"  *ngFor="let miniWidget of appConfigSvc.siteConfig.dashboardMiniWidgets;let i = index">
+        <!-- <div class="cc-mini-widget"  *ngFor="let miniWidget of appConfigSvc.siteConfig.dashboardMiniWidgets;let i = index">
           <div class="cc-mini-widget-left">
               <div class="cc-mini-widget-title">{{miniWidget.title}}</div>
               <div class="cc-mini-widget-count">0</div>
           </div>          
             <div class="cc-mini-widget-icon" [ngClass]="miniWidget.icon"></div>
+        </div> -->
+        <div class="cc-get-started">
+          <span>
+            Lets get started 
+          </span>
         </div>
     </div> 
   </div>

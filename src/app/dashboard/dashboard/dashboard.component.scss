@@ -16,7 +16,22 @@
     width: 100%;
     flex-wrap: wrap;
     display: flex;
+
 }
+
+.cc-main:after {
+    content : "";
+    background-image: url('./../../../assets/images/entrepreneur.png');
+    background-size: cover;
+    position: fixed;
+    height: 30em;
+    background-repeat: no-repeat;
+    width: 57em;
+    margin: initial;
+    z-index: 0;
+    bottom: 0;
+}
+
 .cc-sidebar {
    flex: 1;
   

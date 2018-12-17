@@ -1,6 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { AppConfigService } from '../../shared/services/app-config.service';
-import { WorkFlowConfig } from '../../shared/entities/workflow-config';
 declare var LeaderLine: any;
 
 @Component({
@@ -15,6 +14,7 @@ export class WorkflowComponent implements AfterViewInit {
 
   public async ngAfterViewInit() {
     await this.connectWorkflow();
+    console.log( this.appConfigSvc.siteConfig.workFlowConfig)
   }
 
  public async onResize(e: Event) {
@@ -30,36 +30,32 @@ export class WorkflowComponent implements AfterViewInit {
   }
 
   public async connectWorkflow() {
-    this.workFlowLineArray = new Array<any>();
-    var index = 0;
     try{
       this.appConfigSvc.siteConfig.workFlowConfig.forEach((flow) => {
-        if (index + 1 < this.appConfigSvc.siteConfig.workFlowConfig.length) {
-          this.connectMainWorkflows(flow, index);                
-          index++;
-        }
-       // this.connectSubWorkflows(flow) 
+        console.log(flow)
+        flow.forEach(f => {
+          let startId = f.id;
+          if(f.connect){
+            f.connect.forEach(connect => {
+              console.log(startId, connect)
+              this.connectMainWorkflows(startId, connect);
+           });
+          }
+        });      
       });
     }
     catch (e){
       console.log(e);
     }
   }
-  public async connectMainWorkflows(flow : WorkFlowConfig, index: number){
-    var start = document.getElementById(flow.id);
-    var end = document.getElementById(this.appConfigSvc.siteConfig.workFlowConfig[index + 1].id);
+  public async connectMainWorkflows(startId: string, endId: string){
+    var start = document.getElementById(startId);
+    var end = document.getElementById(endId);
     this.workFlowLineArray.push(new LeaderLine(
       start, end, { color: '#EE343C', dash: { animation: true }, startSocket: 'bottom', endSocket: 'top', startPlug: 'behind', endPlug: 'behind',  startPlugColor: '#3453ee', gradient: true}
     ));
   }
 
-  public async connectSubWorkflows(flow : WorkFlowConfig){
-    var start = document.getElementById(flow.id);
-    var end = document.getElementById(flow.workflowId);
-    this.workFlowLineArray.push(new LeaderLine(
-      start, end, { color: '#EE343C',startPlug: 'behind', endPlug: 'behind',startPlugColor: '#3453ee', gradient: true }
-    ));
-  }
 }
 
 

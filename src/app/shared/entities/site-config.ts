@@ -14,6 +14,6 @@ export class SiteConfig{
     resources: Array<ResourcesConfig>;
     skillSetConfig: Array<SkillSetConfig>;
     codeLanguagesConfig: Array<LanguageConfig>;
-    workFlowConfig: Array<WorkFlowConfig>;
+    workFlowConfig: Array<WorkFlowConfig[]>;
     dashboardMiniWidgets: Array<WorkflowComponent>;
 }

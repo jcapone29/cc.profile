@@ -3,17 +3,12 @@
 <div class="cc-container cc-resource-card-container" (window:resize)="onResize($event)">
   <ng-container *ngFor="let workflow of appConfigSvc.siteConfig.workFlowConfig;let i = index">
     <div class="cc-workflow-bubble">
-        <div class="cc-workflow-bubble-header" [attr.id]="workflow.id"  >
-            <div class="cc-workflow-icon" [ngClass]="workflow.icon"></div>
-            <!-- <div *ngIf="0 === i % 2" class="cc-workflow-bubble-header-mini cc-workflow-bubble-bottom"   [attr.id]="workflow.workflowId">
-              <div class="cc-workflow-bubble-header-mini-title cc-mini-bubble-bottom">{{workflow.title}}</div>
-              <div class="cc-workflow-icon" [ngClass]="workflow.icon"></div>
-              </div>
-              <div *ngIf="0 !== i % 2" class="cc-workflow-bubble-header-mini cc-workflow-bubble-top"  [attr.id]="workflow.workflowId">
-                  <div class="cc-workflow-bubble-header-mini-title cc-mini-bubble-top">{{workflow.title}}</div>
-                  <div class="cc-workflow-icon" [ngClass]="workflow.icon"></div>
-              </div> -->
-          </div> 
+      <div class="cc-flow-mini" *ngFor="let flow of workflow;" >
+          <div class="cc-workflow-bubble-header" [attr.id]="flow.id" [ngClass]="{'empty': flow.placeholder }" >
+              <div class="cc-workflow-icon" [ngClass]="flow.icon"></div>
+              <div class="cc-workflow-bubble-anchor-title">{{flow.title}}</div>
+            </div> 
+      </div>
     </div>
   </ng-container>   
 </div>
