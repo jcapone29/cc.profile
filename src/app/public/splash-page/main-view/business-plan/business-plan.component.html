@@ -1,0 +1,17 @@
+<app-section-title [title]="'Development Fundimentals'"></app-section-title>
+
+<div class="cc-plan-main-container" (appear)="onAppear()">
+  <!-- <app-info-card *ngIf="isVisable" class="info-card animated fadeInUp" [config]="cardConfig"></app-info-card> -->
+  <ng-container *ngIf="isVisable">
+    <div class="step-container">
+      <div class="cc-plan-sub-container delay-child animated fadeInUp delay-2s" *ngFor="let rowConfig of appConfigSvc.siteConfig.businessInfo">
+        <div class="cc-business-step" *ngFor="let config of rowConfig;" [ngClass]="{'top-mark' : rowConfig.length === 1}">
+          <span class="cc-business-title" [ngClass]="config.markerLocation">{{config.title}}</span>
+          <div class="cc-business-marker" *ngIf="config.marker && config.markerLocation !== 'mark-bottom'"><span class="marker-value"><i [ngClass]="config.icon"></i></span></div>
+          <div class="cc-business-marker top-mark" *ngIf="config.marker && config.markerLocation === 'mark-bottom'"><span class="marker-value marker-value-top"><i [ngClass]="config.icon"></i></span></div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+</div>

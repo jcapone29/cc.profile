@@ -6,63 +6,51 @@
         "redirectUri": "http://localhost:4200/callback",
         "scope": "openid email"
     },
-    "pages": [
-        {
-            "title": "Concurrent Engineering",
-            "anchorName": "main",
-            "showNav": true,
-            "isTouched": false,
-            "icon": "home"
-        },
-        {
-            "title": "Skill Set",
-            "anchorName": "skill-set",
-            "showNav": false,
-            "isTouched": false,
-            "icon": "skill"
-        },
-        {
-            "title": "About Me",
-            "anchorName": "about-me",
-            "showNav": true,
-            "isTouched": false,
-            "icon": "gears-in-bald-head-side-view"
-        }
-    ],
+    "pages": {
+        "title": "Concurrent Engineering",
+        "subTitle": "Optimization ahead"
+    },
     "resources": [
         {
             "title": "Website Design",
             "icon": "design",
+            "position": "left",
             "bodyText": "Develop customer inerfaces to differenciate your company from the compotition who uses basic templated design systems."
         },
         {
             "title": "API Managment",
             "icon": "api",
+            "position": "middle",
             "bodyText": "Help your customers access your data in a more seemless fasion using API Managment Systems following the latest in Open API 3.0 ."
         },
         {
-            "title": "Single Sign On",
-            "icon": "sso",
-            "bodyText": "Trying to maintain multiple user managment systems? Consolidate your user base under a single sign on platform to better understand your consumers."
+            "title": "Identity Security",
+            "icon": "fas fa-fingerprint",
+            "position": "right",
+            "bodyText": "Trying to maintain multiple user managment systems? Need to get up to GDPR standards? Consolidate your user base under a single sign on platform to better understand your consumers."
         },
         {
             "title": "Data Visualization",
-            "icon": "visualization",
+            "icon": "far fa-object-group",
+            "position": "middle",
             "bodyText": "Customers may love the idea of your data, but don't have time to learn the raw data. Visualization systems make any dataset more appealing."
         },
         {
-            "title": "Data Managment",
-            "icon": "managment",
-            "bodyText": "With our help your data dictionaty help, you're team will be integrate and manage data faster then your compotision."
+            "title": "Personalization",
+            "icon": "fas fa-swatchbook",
+            "position": "left",
+            "bodyText": "Users want the experience that your content understands them, show them what they want."
         },
         {
             "title": "Workflow Optimization",
-            "icon": "workflow",
+            "icon": "fas fa-tools",
+            "position": "middle",
             "bodyText": "The most expensive piece of any company is labor, don't waste time on button pushing work, automate."
         },
         {
             "title": "Data Scraping",
             "icon": "magnet",
+            "position": "right",
             "bodyText": "Need data from places basic scraping tools can't handle? Some data is just too ticky to aquire, which is where we come in."
         }
     ],
@@ -71,6 +59,8 @@
             "title": "Energy Commodities",
             "label": "power-plant",
             "image": "power-plant",
+            "summary": "Deep understanding of Power, Oil, Natural Gas commodity markets",
+            "market": "Commodities",
             "bodyText": "Four years of experience in Energy Commodities. Working in Power, Oil, Natural Gas, & Maritime for Genscape. Deep knowledge of running effective SCRUM based technology teams to ensure delivery before schedule. Working with the latest technologies and a complex market initiatives to ensure customer satisfaction and retention. ",
             "footerText": "string",
             "visable": false
@@ -79,30 +69,28 @@
             "title": "Machine Learning",
             "label": "string",
             "image": "neural-net",
+            "market": "Technology",
+            "summary": "Development in image recognition systems, currently patent pending on technology.",
             "bodyText": "At Genscape I worked along side our Data Intellgience engineers. Our Team created an image processing system that enables users to Train, Backtest, and enable Real Time processing of Infared Camera images through a central Neural Network platform. Through the Alogrithm we are able to study Power Plant production activite. I currently co-hold a patent with Genscape under this intelectual propery",
             "footerText": "",
             "visable": false
         },
         {
-            "title": "Identiy Security",
-            "label": "string",
-            "image": "security",
-            "bodyText": "At Genscape I lead a team of engineers to implements a 3rd party Idenity Provider, Auth0, to solve the companies Single Sign On intiative. Leveraging SalesFroce I was able to design an architecutre to enable the company to manage all users through SalesForce",
-            "footerText": "string",
-            "visable": false
-        },
-        {
-            "title": "Stock Trading",
+            "title": "Stock Market",
             "label": "string",
             "image": "stocks",
+            "market": "Finance",
+            "summary": "Language processing and sentiment analysis algorithums to better understand market trends.",
             "bodyText": "One of my first solo project names REdge, was a concept where I build a system that would leverage public data from Reddit.com to find possible stock trading opertunites. By scraping a large number or relavant threads leveraging a dictionary of tickers, I was able to create a large databse of flagged comments and posts. From there I could use those posts, push them through a sentament analysis algorithm to get attempt to find postative and negative annotations assosiatd to the text. There i would then track users assosiated to number of tickers mentioned and marry them up to stock trends to attempt to find Super Users who I could follow more closely",
             "footerText": "string",
             "visable": false
         },
         {
-            "title": "Crypto Trading",
+            "title": "Crypto Currency",
             "label": "string",
             "image": "crypto",
+            "market": "Cryptocurrency",
+            "summary": "Years of experience trading cryto currencies.",
             "bodyText": "Tieing an API and some Azure Functions to the Bitfinex API, I wrote a trading bot that would leverage base level Move Average calculations to trade crypto currencies in real time. I would run a conncurent thread every 5 minutes with a dictionary of mover average windows and time frames through the crypto real time princing to find the most optimal positions at that moment. Overall the bot proved to be successful and net a profit after the 3 month trial run.",
             "footerText": "string",
             "visable": false
@@ -138,75 +126,53 @@
         }
     ],
     "workFlowConfig": [
-        [
-            {
-                "id": "account",
-                "icon": "user",
-                "title": "Sign Up",
-                "connect": ["design-empty"]
-            }
-        ],
-        [
             {
                 "id": "connect",
-                "icon": "workflow",
-                "title": "We'll estimate",
-                "connect": ["design"]
+                "icon": "brainstorm",
+                "visable": false,
+                "title": "Define",
+                "info": ["The Goal", "The Impact", "The Requierments"],
+                "connect": [
+                    "design"
+                ]
             },
-            {
-                "id": "design-empty",
-                "icon": "goal",
-                "connect": ["connect","plan"]
-            },
-            {
-                "id": "plan",
-                "icon": "project",
-                "title": "Set up the plan",
-                "connect": ["set-goals"]
-            }
-        ],
-        [
             {
                 "id": "design",
                 "icon": "settings",
+                "visable": false,
                 "title": "Design",
-                "connect": ["poc"]
+                "info": ["Architecture", "UX/UI", "Delievery"],
+                "connect": [
+                    "develop"
+                ]
             },
             {
-                "id": "set-goals",
+                "id": "develop",
                 "icon": "goal",
-                "title": "Sign Up",
-                "connect": ["poc"]
-            }
-        ],
-        [
-            {
-                "placeholder": true
+                "visable": false,
+                "title": "Develop",
+                "info": ["Transparently", "Itterativly", "Seamlessly"],
+                "connect": [
+                    "document"
+                ]
             },
             {
-                "id": "poc",
-                "icon": "design",
-                "title": "Design",
-                "connect": ["conversation"]
+                "id": "document",
+                "icon": "envelope",
+                "visable": false,
+                "title": "Document",
+                "info": ["High Level", "User Manuals", "Testing Plans"],
+                "connect": [
+                    "deliver"
+                ]
             },
             {
-                "placeholder": true
-            }
-        ],
-        [
-            {
-                "placeholder": true
-            },
-            {
-                "id": "conversation",
-                "icon": "globe",
-                "title": "Design"
-            },
-            {
-                "placeholder": true
-            }
-        ]
-
+                "id": "deliver",
+                "icon": "Deliever",
+                "title": "Deliver",
+                "info": ["On Time", "Stable", "Impactful"]
+               
+            }     
     ],
     "dashboardMiniWidgets": [
         {
@@ -226,6 +192,87 @@
             "icon": "notes",
             "title": "Notes",
             "bodyText": ""
+        }
+    ],
+    "businessInfo": [
+        [
+            {
+                "title": "Deliver Stability",
+                "subTitle": "We stay up to date and addapt to the fast pace market",
+                "marker": true,
+                "icon": "fas fa-certificate",
+                "markerLocation": "mark-bottom"
+            }
+        ],
+        [
+            {
+                "title": "Agile Development",
+                "subTitle": "Respond to ever changing makret demands",
+                "marker": true,
+                "icon": "fas fa-cog",
+                "markerLocation": "mark-left"
+            },
+            {
+                "title": ".",
+                "subTitle": "Integration with ease",
+                "marker": true,
+                "icon": "fas fa-cog",
+                "markerLocation": "mark-right"
+            }
+        ],
+        [
+            {
+                "title": "Business Focused",
+                "subTitle": "Deliver quickly with high quality, don't over engineer",
+                "marker": true,
+                "icon": "fas fa-cog",
+                "markerLocation": "mark-left"
+            },
+            {
+                "title": "Clear Documentation",
+                "subTitle": "Deliver quickly with high quality, don't over engineer",
+                "marker": true,
+                "icon": "fas fa-cog",
+                "markerLocation": "mark-right"
+            }
+        ],
+        [
+            {
+                "title": "Technolgy Expertise",
+                "subTitle": "We ensure seamless integration",
+                "marker": true,
+                "icon": "fas fa-cog",
+                "markerLocation": "mark-left"
+            },
+            {
+                "title": "Architecture Essentials",
+                "subTitle": "Design systems that are structurally sound",
+                "marker": true,
+                "icon": "fas fa-cog",
+                "markerLocation": "mark-right"
+            }
+        ]
+    ],
+    "footer": [
+        {
+            "title": "Copyright 2018 Concurrent Engineering",
+            "isRoute": false
+        },
+        {
+            "title": "Privacy Policy",
+            "isRoute": true
+        },
+        {
+            "title": "Company Policies",
+            "isRoute": true
+        },
+        {
+            "title": "Compliance ",
+            "isRoute": true
+        },
+        {
+            "title": "Terms of Use ",
+            "isRoute": true
         }
     ]
 }

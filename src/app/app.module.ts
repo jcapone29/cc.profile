@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { CommonModule } from '@angular/common';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -11,17 +9,8 @@ import { MnFullpageModule } from 'ngx-fullpage/index';
 import { APP_INITIALIZER } from '@angular/core';
 import { AppConfigService } from './shared/services/app-config.service';
 import { AppearDirective } from './shared/directives/appear';
-import { CodeLanguagesComponent } from './splash-page/code-languages/code-languages.component';
-import { SkillSetComponent } from './splash-page/skill-set/skill-set.component';
-import { SectionTitleComponent } from './splash-page/section-title/section-title.component';
-import { ProjectCardComponent } from './splash-page/skill-set/project-card/project-card.component';
-import { ProjectImageComponent } from './splash-page/skill-set/project-image/project-image.component';
-import { WorkflowComponent } from './splash-page/workflow/workflow.component';
-import { ResourcesComponent } from './splash-page/resources/resources.component';
 import  'jquery';
 import  'leader-line';
-import { SplashPageComponent } from './splash-page/splash-page/splash-page.component';
-import { MainViewComponent } from './splash-page/main-view/main-view.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './shared/routing/app-routing.module';
 import { CallbackComponent } from './shared/auth/callback/callback.component';
@@ -33,7 +22,19 @@ import { NotesComponent } from './dashboard/notes/notes.component';
 import { StoryBoardComponent } from './dashboard/projects/story-board/story-board.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { NavigationComponent } from './dashboard/navigation/navigation.component';
-import { BusinessPlanComponent } from './splash-page/business-plan/business-plan.component';
+import { SplashPageComponent } from './public/splash-page/main-view/splash-page/splash-page.component';
+import { SkillSetComponent } from './public/splash-page/skill-set/skill-set.component';
+import { SectionTitleComponent } from './public/splash-page/section-title/section-title.component';
+import { ResourcesComponent } from './public/splash-page/main-view/resources/resources.component';
+import { MainViewComponent } from './public/splash-page/main-view/main-view.component';
+import { WorkflowComponent } from './public/splash-page/main-view/workflow/workflow.component';
+import { BusinessPlanComponent } from './public/splash-page/main-view/business-plan/business-plan.component';
+import { SplashFooterComponent } from './public/splash-page/main-view/splash-footer/splash-footer.component';
+import { InfoCardComponent } from './shared/components/info-card/info-card.component';
+import { ContactUsComponent } from './public/contact/contact-us/contact-us.component';
+import { ContactWidgetComponent } from './public/contact/contact-widget/contact-widget.component';
+import { ContactCardComponent } from './public/contact/contact-card/contact-card.component';
+
 
 
 @NgModule({
@@ -42,10 +43,7 @@ import { BusinessPlanComponent } from './splash-page/business-plan/business-plan
     SplashPageComponent,
     SkillSetComponent,
     AppearDirective,
-    CodeLanguagesComponent,
     SectionTitleComponent,
-    ProjectCardComponent,
-    ProjectImageComponent,
     ResourcesComponent,
     WorkflowComponent,
     MainViewComponent,
@@ -57,7 +55,12 @@ import { BusinessPlanComponent } from './splash-page/business-plan/business-plan
     StoryBoardComponent,
     HeaderComponent,
     NavigationComponent,
-    BusinessPlanComponent
+    BusinessPlanComponent,
+    SplashFooterComponent,
+    InfoCardComponent,
+    ContactWidgetComponent,
+    ContactUsComponent,
+    ContactCardComponent
   ],
   imports: [
     BrowserModule,

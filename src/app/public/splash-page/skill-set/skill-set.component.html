@@ -1,0 +1,20 @@
+<app-section-title [title]="'Our Experience & Experiments'"></app-section-title>
+<div class="cc-container cc-skill-set-container">
+  <div class="skill-container" (appear)="onAppear()">
+    <div></div>
+    <ng-container *ngIf="isVisable">
+      <div class="skill-card delay-child animated fadeInUp delay-2s" *ngFor="let skill of appConfigSvc.siteConfig.skillSetConfig; let i = index">
+        <div class="cc-card-container" [ngClass]="skill.image">
+        </div>
+        <div class="cc-card-bottom-container">
+          <ul class="cc-header-sm">
+            <li class="cc-card-date action">31 Dec, 2018</li>
+            <li class="cc-card-title-sm action">{{skill.market}}</li>
+          </ul>
+          <h3 class="cc-card-title action"> {{skill.title}}</h3>
+          <p class="cc-card-text">{{skill.summary}}</p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

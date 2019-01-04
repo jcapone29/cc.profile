@@ -1,0 +1,72 @@
+@import "../../../../assets/styles/tokens.scss";
+
+.cc-title-container{
+    width: 100%;
+    height: 5em;
+    // margin: 4em 0em 4em 0em;
+    background: transparent;
+}
+
+.cc-title{
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .21em;
+    @media all and (max-width: $cc-mobile-large) {
+        font-size: 3em;
+      }
+}
+
+
+
+
+
+
+.box {
+    height: 300px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+    background: #110f10;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: .8;
+  }
+  
+
+  
+  .box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ed343c, rgba(51, 51, 51, 0) 100%, rgb(16, 15, 15));
+    z-index: 11;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+
+
+  
+  
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    line-height: 300px;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: .4em;
+    font-size: 24px;
+    text-shadow: 0 1px 0 rgba(black, .1);
+    text-indent: .3em;
+  }

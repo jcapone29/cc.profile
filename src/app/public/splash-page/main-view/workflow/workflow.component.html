@@ -1,0 +1,30 @@
+<app-section-title [title]="'Build Your Roadmap'"></app-section-title>
+<div class="cc-container cc-resource-card-container" (appear)="onAppear()">
+
+  <ng-container *ngIf="isVisable">
+    <div class="cc-resource-card-container">
+      <div class="cc-sub-left-nav">
+      </div>
+      <div class="cc-sub-middle-nav">
+        <div class="cc-workflow-mini-container delay-child animated fadeInUp delay-2s" *ngFor="let flow of appConfigSvc.siteConfig.workFlowConfig;  let even = even; let odd = odd">
+          <div class="cc-workflow-bubble" [attr.id]="flow.id" [ngClass]="{'empty': flow.placeholder }">
+            <span class="marker-bubble">
+              <i class="fas fa-cog"></i>
+            </span>
+            <div class="workflow-bubble-title" [ngClass]="{ 'bubble-title-left': odd, 'bubble-title-right': even }">{{flow.title}}</div>
+            <div class="workflow-bubble-info delay-child animated fadeInUp delay-2s" *ngIf="isConentVisable" [ngClass]="{ 'bubble-info-left': odd, 'bubble-info-right': even }">
+              <ul>
+                <li *ngFor="let info of flow" >
+                    <i class="fas fa-check"></i> <span> {{info}}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cc-sub-right-nav">
+        </div>
+    </div>
+  </ng-container>
+
+</div>

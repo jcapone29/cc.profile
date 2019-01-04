@@ -1,0 +1,12 @@
+<div class="continer-full-page">
+    <app-header [showNav]="showNav" class="animated fadeInUp delay-3s"></app-header>
+    <app-splash-page  [playVideo]="showNav" [scrollPosition]="scrollPosition"></app-splash-page>
+    <app-resources></app-resources>
+    <app-business-plan></app-business-plan>
+    <app-workflow></app-workflow>
+    <app-skill-set></app-skill-set>
+    <app-splash-footer></app-splash-footer>
+    <app-contact-widget *ngIf="!showContactCard"></app-contact-widget>
+    <app-contact-card *ngIf="showContactCard" class="animated fadeInUp delay-4s cc-contact-card"></app-contact-card>
+</div>
+    

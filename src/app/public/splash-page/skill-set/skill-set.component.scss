@@ -1,0 +1,175 @@
+
+@import "../../../../assets/styles/tokens.scss";
+
+
+.skill-container{
+    width: 100%;
+    margin-top: 0em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+
+    @media all and (max-width: $cc-mobile-large) {
+        margin-top: 3em;
+        flex-wrap: wrap-reverse;
+      }
+
+}
+
+.skill-card{
+    position: relative;
+    padding: 2em;
+    margin-top: 2em;
+    width: $cc-card-width;
+    @media all and (max-width: $cc-mobile-large) {
+
+    }
+}
+
+
+.cc-card-line{
+    
+    -moz-transition: all .9s ease-in;
+    -o-transition: all .9s ease-in;
+    -webkit-transition: all .9s ease-in;
+    transition: all .9s ease-in;
+}
+
+.cc-card-container{
+    height: 20em;
+    width: $cc-card-width;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.cc-card-container:after{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    height: 20em;
+    width: $cc-card-width;
+    content: '';
+    background: linear-gradient(to right, #46bdf4 0%, #7a0fff 100%);
+    opacity: .2;
+    transition: all .5s ease;
+}
+
+.cc-card-title{
+    color: $cc-white;
+    font-size: 1.33em;
+
+}
+
+.cc-card-bottom-container{
+     padding: 1.5em;
+     background-color: #00284cd9;
+     text-align: left;
+     height: 14em;
+     transition: all .5s ease;
+}
+
+.cc-header-sm{
+    padding: 0;
+    text-transform: uppercase;
+    color: $cc-blue;
+    position: relative;
+    font-weight: 800;
+}
+
+.cc-card-title-sm{
+    display: inline;
+    padding-left: 2em;
+}
+.cc-card-date{
+    display: inline;
+}
+
+.action{
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.action:hover{
+    color: $cc-coral;
+}
+
+.cc-card-date:after{
+    position: absolute;
+    bottom: 6px;
+    top: 1px;
+    margin-left: 1em;
+    height: 16px;
+    width: 1px;
+    content: '';
+    background: $cc-coral;
+}
+
+.cc-card-text{
+    color: #8284a5;
+    line-height: 32px;
+    font-size: 1.1em;
+}
+
+
+// .heading-animation {
+//     border-top-color: #2b56f5;
+//     border-left-color: #2b56f5;
+//     position: absolute;
+//     height: 60px;
+//     width: 60px;
+//     left: 50%;
+//     top: 10px;
+//     opacity: .2;
+//     border-radius: 50%;
+//     background: transparent;
+//     transform: rotate(45deg) translate(-50%, 0);
+// }
+
+// .line{
+//     position: absolute;
+//     content: "";
+//     border-radius: 50%;
+//     background: transparent;
+//     border-top: 2px solid #2b56f5;
+//     border-left: 2px solid #2b56f5;
+// }
+
+// @for $i from 1 to 10 {
+//     .line:nth-child(#{$i}) { 
+//         top:  $i * 2 - 15px ;
+//         left: $i * 2 - 15px  ;
+//         height: $i * 30px ;
+//         width: $i * 30px ;
+//     }
+//   }
+
+
+
+.light-bulb{
+    background-image: url('./../../../../assets/images/skill-set/light-bulb.jpg')
+}
+
+.neural-net {
+    background-image: url('./../../../../assets/images/skill-set/neural-net.jpg')
+}
+.power-plant {
+    background-image: url('./../../../../assets/images/skill-set/power-plant.jpg')
+}
+.security {
+    background-image: url('./../../../../assets/images/skill-set/security.jpg')
+}
+.crypto {
+    background-image: url('./../../../../assets/images/skill-set/crypto.jpg')
+}
+.stock-trades {
+    background-image: url('./../../../../assets/images/skill-set/stock-trades.jpg')
+}
+.workflow {
+    background-image: url('./../../../../assets/images/skill-set/workflow.jpg')
+}
+.stocks {
+    background-image: url('./../../../../assets/images/skill-set/stocks.png')
+}

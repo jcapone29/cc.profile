@@ -1,0 +1,26 @@
+<app-header [showNav]="false"></app-header>
+<app-section-title [title]="'Contact Us'"></app-section-title>
+<div class="cc-video-wall">
+  <video autoplay muted loop id="myVideo" oncanplay="this.play()" onloadedmetadata="this.muted = true" #videoPlayer>
+    <source src="./../../../../assets/videos/Hologram_Planet_by_nuva.mp4" type="video/mp4">
+  </video>
+</div>
+<div class="contact-us-container">
+  <div class="contact-us-template">
+    <div class="contact-us-left"></div>
+    <div class="contact-us-right">
+      <div class="contact-title-container">
+        <div class="contact-title">Let the innovation begin</div>
+        <div class="contact-title-sub">Contact us today to get started on your next project with conncurrent engineering </div>
+      </div>
+      <input type="text" class="contact-input cc-input-md" placeholder="First name"/>
+      <input type="text" class="contact-input cc-input-md" placeholder="Last name"/>
+      <input type="text" class="contact-input cc-input-md" placeholder="Email"/>
+      <input type="text" class="contact-input cc-input-md" placeholder="Phone #"/>
+      <input type="text" class="contact-input cc-input-lg" placeholder="Company"/>
+      <textarea type="text" class="contact-input cc-input-lg"></textarea>
+      <button class="cc-contact-btn">Contact Us</button>
+    </div>
+  </div>
+</div>
+<app-splash-footer></app-splash-footer>

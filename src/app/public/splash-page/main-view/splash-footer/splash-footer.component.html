@@ -1,0 +1,7 @@
+<div class="footer-container">
+  <div class="footer-inner-container">
+    <div class="footer-text" *ngFor="let footer of appConfigSvc.siteConfig.footer;let i = index" [ngClass]="{'footer-bar' : i != 0}">
+      {{footer.title}}
+    </div>
+  </div>
+</div>

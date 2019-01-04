@@ -1,0 +1,114 @@
+@import "../../../../assets/styles/tokens.scss";
+
+
+
+.cc-video-wall {
+    left: 0;
+    top:0;
+    z-index: -1;
+    position: fixed;
+  }
+
+  .contact-us-template{
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 100%;
+  }
+  .contact-us-template {
+    margin: auto;
+    height: calc(100% - 10em);
+    background: #000000cf;
+    width: 100%;
+    display: flex;
+  }
+
+  .contact-us-left{
+      flex: 1;
+  }
+
+  .contact-us-right{
+    flex: 2;
+    padding: 5em;
+  }
+  .contact-input{
+    display: inline-flex;
+    background: transparent;
+    padding: 0.5em;
+    border: 1px solid $cc-coral;
+    margin: 1em;
+    font-size: 1.5em;
+    color: #ffffff;
+	-webkit-animation: shadow-pop-br 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s both;
+	        animation: shadow-pop-br 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) 1s both;
+
+  }
+
+  .cc-input-md{
+    width: 42%;
+  }
+
+  .cc-input-lg{
+    width: 90%;
+  }
+
+
+  .cc-contact-btn{
+    width: 10em;
+    background-color: #EE343C;
+    border-radius: 7px;
+    line-height: 55px;
+    font-size: 29px;
+    text-align: center;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgb(238, 52, 60);
+  }
+  .contact-title{
+    color: $cc-coral;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-title-sub{
+    color: #d2d2d2;
+    font-size: 1.2em;
+    width: 100%;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+
+  @for $i from 1 to 10 {
+    .contact-input:nth-child(#{$i}) { animation-delay: $i * 0.25s; }
+  }
+
+
+@-webkit-keyframes shadow-pop-br {
+    0% {
+      box-shadow: 0 0 $cc-coral, 0 0 $cc-coral, 0 0 $cc-coral, 0 0 $cc-coral;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      box-shadow: 1px 1px $cc-coral, 2px 2px $cc-coral, 3px 3px $cc-coral, 4px 4px $cc-coral;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  @keyframes shadow-pop-br {
+    0% {
+      box-shadow: 0 0 $cc-coral, 0 0 $cc-coral, 0 0 $cc-coral, 0 0 $cc-coral;
+      -webkit-transform: translateX(0) translateY(0);
+              transform: translateX(0) translateY(0);
+    }
+    100% {
+      box-shadow: 1px 1px $cc-coral, 2px 2px $cc-coral, 3px 3px $cc-coral, 4px 4px $cc-coral;
+      -webkit-transform: translateX(-8px) translateY(-8px);
+              transform: translateX(-8px) translateY(-8px);
+    }
+  }
+  

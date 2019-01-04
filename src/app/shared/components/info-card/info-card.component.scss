@@ -1,0 +1,68 @@
+@import "../../../../assets/styles/tokens.scss";
+
+.cc-info-card-container{
+    padding: 5em;
+    display: block;
+    margin: auto;    
+    position: relative;
+}
+
+.cc-info-card-main-title{
+    color: $cc-white;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 1em;
+    text-transform: capitalize;
+    font-size: 2em;
+    position: relative;
+    transition: all .5s ease-in;
+}
+
+.cc-card-red::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 50%;
+    margin-top: .5em;
+    height: 0.001em;
+    border: 1px solid $cc-coral;
+  }
+
+  .cc-card-blue::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 50%;
+    margin-top: .5em;
+    height: 0.001em;
+    border: 1px solid #3a52e8;
+  }
+
+
+.cc-info-card-sub-title{
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    color: $cc-fade-gray;
+    transition: all .5s ease-in;
+    text-align: center;
+}
+
+.closed{
+    height: 0;
+    position: absolute;
+    overflow: hidden;
+
+}
+.open-top{
+    bottom: -2em;
+}
+.open{
+    height: 3em ;
+
+}
+.clickable{
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+<div class="cc-info-card-container clickable" (mouseenter)="grow = true" (mouseleave)="grow = false" *ngIf="config.responsive">
+  <div class="cc-info-card-main-title" [ngClass]="config.cardType" [ngStyle]="{'bottom': grow ? '0em' : '-2em' }" >{{config.title}}</div>
+  <div class="cc-info-card-sub-title closed" *ngIf="config.responsive" [ngClass]="{'open': grow}">{{config.subTitle}}</div>
+  <div class="cc-info-card-sub-title" *ngIf="!config.responsive">{{config.subTitle}}</div>
+</div>
+
+<div class="cc-info-card-container" *ngIf="!config.responsive">
+    <div class="cc-info-card-main-title" [ngClass]="config.cardType">{{config.title}}</div>
+    <div class="cc-info-card-sub-title">{{config.subTitle}}</div>
+  </div>

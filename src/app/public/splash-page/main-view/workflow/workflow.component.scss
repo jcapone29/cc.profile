@@ -1,0 +1,166 @@
+@import "../../../../../assets/styles/tokens.scss";
+@import "../resources/resources.component.scss";
+
+
+.cc-resource-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.cc-sub-left-nav{
+    flex: 1;
+}
+
+.cc-sub-middle-nav{
+    flex: 1;
+}
+.cc-sub-right-nav{
+    flex: 1;
+}
+
+.workflow-bubble-title{
+    position: absolute;
+    background-color: #6c40fc;
+    width: 9em;
+    border-radius: 12px;
+    top: 8px;
+    padding: 5px 0px 5px 0px;
+    color: white;
+}
+
+.bubble-title-left{
+    right: 7em;
+}
+
+.bubble-title-left:before{
+    position: absolute;
+    content: "";
+    left: 7em;
+    bottom: 12px;
+    height: 2px;
+    z-index: -1;
+    width: calc(100% - 3em);
+    background-image: -webkit-linear-gradient(left, #46bdf4 0%, #7a0fff 100%);
+}
+.bubble-title-right{
+    left: 7em;
+}
+
+.bubble-title-right:before{
+    position: absolute;
+    content: "";
+    right: 7em;
+    bottom: 12px;
+    height: 2px;
+    z-index: -1;
+    width: calc(100% - 3em);
+    background-image: -webkit-linear-gradient(right, #46bdf4 0%, #7a0fff 100%);
+}
+
+.workflow-bubble-info{
+    position: absolute;
+    color: white;
+    top: 3em;
+    width: 7em;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+
+.workflow-bubble-info:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6em;
+    width: 8em;
+    content: '';
+    background: linear-gradient(to right, #46bdf4 0%, #7a0fff 100%);
+    opacity: .2;
+    transition: all .5s ease;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 22px;
+}
+
+.bubble-info-right{
+    left: 7em;
+}
+
+.bubble-info-left{
+    right: 7em;
+}
+
+.cc-workflow-mini-container{
+    position: relative;
+    padding: 4em;
+    margin: auto;
+    z-index: 1;
+    width: 3em;
+}
+
+.cc-workflow-bubble{
+    height: 3em;
+    width: 3em;
+    background-image: -webkit-linear-gradient(top, #46bdf4 0%, #7a0fff 100%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.marker-bubble{
+    position: absolute;
+    color: #ffffff;
+    left: 8px;
+    top: 5px;
+    font-size: 32px;
+    -webkit-animation: spin 4s infinite linear;
+}
+
+@-webkit-keyframes spin {
+    0%  {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}   
+}
+
+
+
+.empty{
+    border:none;
+}
+.user {
+    background-image: url('./../../../../../assets/icons/workflow/user.svg')
+}
+.goal {
+    background-image: url('./../../../../../assets/icons/workflow/goal.svg')
+}
+
+.analytics {
+    background-image: url('./../../../../../assets/icons/workflow/analytics.svg')
+}
+.sketch {
+    background-image: url('./../../../../../assets/icons/workflow/sketch.svg')
+}
+
+.settings {
+    background-image: url('./../../../../../assets/icons/workflow/settings.svg')
+}
+.globe {
+    background-image: url('./../../../../../assets/icons/workflow/earth-globe.svg')
+}
+.conversation{
+    background-image: url('./../../../../../assets/icons/workflow/conversation.svg')
+}
+.project{
+    background-image: url('./../../../../../assets/icons/workflow/project.svg')
+}
+.brainstorm{
+    background-image: url('./../../../../../assets/icons/gears-in-bald-head-side-view.svg')
+}
+.envelope{
+    background-image: url('./../../../../../assets/icons/envelope.svg')
+}
+.skills{
+    background-image: url('./../../../../../assets/icons/skills.svg')
+}

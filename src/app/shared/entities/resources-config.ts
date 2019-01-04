@@ -5,4 +5,5 @@ export class ResourcesConfig{
     title: string;
     icon: string;
     bodyText: string;
+    position: string;
 }

@@ -1,0 +1,22 @@
+<app-section-title [title]="'Our Technology Services'"></app-section-title>
+
+<div class="cc-container cc-resource-card-container" (appear)="onAppear()">
+    <app-info-card  *ngIf="isVisable" class="info-card animated fadeInUp" [config]="cardConfig" ></app-info-card>
+    <ng-container *ngIf="isVisable">
+        <div class="cc-resource-card delay-child animated fadeInUp " *ngFor="let resource of appConfigSvc.siteConfig.resources;let i = index" (mouseover)="indexHover = i" (mouseout)="indexHover = null">
+            <div class="header-container">
+                    <div class="cc-resource-card-header main-header"  [ngStyle]="{'z-index': resource.position === 'middle'? 1: -2}" [ngClass]="{'focus-main': indexHover === i, 'active-icon': resource.position === 'middle' && indexHover === i}">
+                            <div class="cc-anchor-title" *ngIf="resource.position === 'middle'" [ngClass]="resource.icon"></div>
+                        </div>
+                        <div class="cc-resource-card-header right-header"  [ngStyle]="{'z-index': resource.position === 'left'? 1: -2}" [ngClass]="{'focus-right-left':  indexHover === i, 'active-icon': resource.position === 'left' && indexHover === i}">
+                                <div class="cc-anchor-title" *ngIf="resource.position === 'left'" [ngClass]="resource.icon"></div>
+                        </div>
+                        <div class="cc-resource-card-header left-header" [ngStyle]="{'z-index': resource.position === 'right'? 1: -2}" [ngClass]="{'focus-right-left':  indexHover === i, 'active-icon': resource.position === 'right' && indexHover === i}">
+                                <div class="cc-anchor-title" *ngIf="resource.position === 'right'" [ngClass]="resource.icon"></div>
+                        </div>
+            </div>
+            <div class="cc-resource-card-title">{{resource.title}}</div>
+            <div class="cc-resource-card-body">{{resource.bodyText}}</div>
+        </div>
+    </ng-container>
+</div>

@@ -1,0 +1,25 @@
+
+@import "../../../../../assets/styles/tokens.scss";
+
+
+.footer-container{
+
+}
+.footer-inner-container{
+    display: flex;
+    text-align: center;
+    padding: 10em 15em 5em 15em;
+}
+
+.footer-text{
+    flex: 1;
+    color: $cc-white;
+    font-size: .8em;
+}
+
+.footer-bar:before{
+    content: "";
+    border-left: 3px solid #614bc2;
+    margin-right: 7em;
+    padding: 0.8em;
+}
